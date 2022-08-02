@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "blobs",
+  "version": "1.0.0",
+
+  "name": "Blobs",
+  "description": "Cute little blobs",
+  "authors": [
+    "mateusak"
+  ],
+  "contact": {
+    "homepage": "https://github.com/mateusak/minecraft-blobs"
+  },
+
+  "license": "MIT",
+  "icon": "assets/blobs/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.rubi.blobs.Blobs"
+    ],
+    "client": [
+      "net.rubi.blobs.BlobsClient"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

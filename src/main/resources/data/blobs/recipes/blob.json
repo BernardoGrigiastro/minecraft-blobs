@@ -1,0 +1,11 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:slime_ball" },
+    { "item": "minecraft:melon_seeds" }
+  ],
+  "result": {
+    "item": "blobs:blob",
+    "count": 1
+  }
+}
