@@ -27,6 +27,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
+import net.rubi.blobs.items.BlobItem;
 
 public class BlobEntity extends LivingEntity {
    public static final String ID = "blobs:blob_entity";
@@ -78,7 +79,8 @@ public class BlobEntity extends LivingEntity {
          player.setStackInHand(hand, this.originStack);
          return true;
       }
-      else if (ItemStack.areNbtEqual(handStack, this.originStack)
+      else if (handStack.getItem() instanceof BlobItem
+      && ItemStack.areNbtEqual(handStack, this.originStack)
       && handStack.getCount() < handStack.getMaxCount()) {
          handStack.increment(1);
          return true;
